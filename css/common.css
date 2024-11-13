@@ -1,0 +1,22 @@
+:root{
+  --mainColor: #0051FF;
+  --subColor: #ffe100;
+}
+
+.rel{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.more_btn{
+  display: inline-block;
+  border-radius: 30rem;
+  width: max-content;
+  height: max-content;
+  padding: 1rem 1.5rem;
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+}
+

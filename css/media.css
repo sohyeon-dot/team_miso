@@ -1,0 +1,516 @@
+@media screen and (min-width:768px){
+  
+  html{font-size: 65%;}
+
+  .goto-top>a{display: none;}
+
+  main{height: 100vh;}
+  main .dask_only{display: none;}
+  main .main_tit{
+    top: 23%;
+    font-size: 5rem;
+  }
+  main .main_text p:first-child{font-size: 3rem;}
+  main .main_text .text{font-size: 5.4rem;}
+  main .main_text p:nth-of-type(3){
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+  main .moMain_images{
+    position: absolute;
+    top: 47%;
+    left: 0;
+    width: 100%;
+  }
+  main .moMain_images img:nth-child(2){display: none;}
+  main .moMain_images img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  section{margin-bottom: 15rem;}
+  #section01{width: 95%;}
+  #section01 .text_left{font-size: 3rem;}
+  #section01 .text_left b{font-size: 4rem;}
+  #section01 .text_right{font-size: 5rem;}
+  #section01 .text_right b{font-size: 5.5rem;}
+  #section01 .content{flex-direction: column;}
+  #section01 .content .caption{
+    width: 100%;
+    padding: 5rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    overflow: hidden;
+  }
+  #section01 .content .caption p{
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-bottom: 5rem;
+  }
+  #section01 .content .cap1{margin-left: -1rem;}
+  #section01 .content .cap2{margin-top: 3rem;}
+  #section01 .content .cap1:after,
+  #section01 .content .cap2:after{
+    width: 45%;
+    height: 90%;
+    bottom: 0;
+  }
+  #section01 .content .cap1:after{
+    background: url(../image/section01_3.png) no-repeat center/contain;
+    right: 0;
+  }
+  #section01 .content .cap2:after{
+    background: url(../image/section01_4.png) no-repeat center/contain;
+    right: -5rem;
+  }
+  #section01 .btn{
+    font-size: 2rem;
+    padding: 1rem 2.5rem;
+  }
+  #section01 .cap2 .btn{border: 0.2rem solid #D6E3FF;}
+
+  #section02 .menu_btn{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 2rem;
+  }
+  #section02 .s2_tit{
+    width: 20rem;
+    height: 20rem;
+  }
+  #section02 .s2_tit>span{font-size: 4rem;}
+  #section02 .itmes{
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto 0;
+  }
+  #section02 div[class*=key]{
+    position: absolute;
+    font-size: 2.3rem;
+  }
+  #section02 div[class*=key] img{
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  #section02 .key1{
+    top: 0;
+    left: 35%;
+  }
+  #section02 .key2{
+    bottom: -10%;
+    left: 0;
+  }
+  #section02 .key3{
+    bottom: 5%;
+    right: 0;
+  }
+  #section02 .content{
+    display: flex;
+    justify-content: space-between;
+    bottom: 5%;
+  }
+  #section02 .caption{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  #section02 .content div:nth-child(1){padding-top: 4.5rem;}
+  #section02 .caption .dask_only{display: inline;}
+  #section02 .caption .s2_btn{
+    width: max-content;
+    display: block;
+    float: none;
+    margin-top: 3rem;
+  }
+  #section02 .s2_content .main_image img{height: 95%;}
+  #section02 #capTab2 .s2_tit:before{
+    width: 10rem;
+    height: 10rem;
+    top: 2rem;
+  }
+  #section02 .cards{width: 90%;}
+  #section02 .s2_text{
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    font-size: 3.5rem;
+  }
+  #section02 .s2_text b{font-size: 4rem;}
+
+  #section03 .mob_only{display: none;}
+  #section03 .text{flex-direction: column;}
+  #section03 .content h2{font-size: 3rem;}
+  #section03 .text p{font-size: 2.8rem;}
+  #section03 .text span{
+    font-size: 1.9rem;
+    margin-top: 0;
+  }
+  #section03 .caption2{
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    margin: -1rem auto 0;
+    min-width: 77rem;
+  }
+  #section03 .dask_only{
+    flex: 1;
+  }
+  #section03 .dask_only .card{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    border-bottom: 0.1rem solid #eee;
+    padding: 1rem 0;
+  }
+  #section03 .dask_only .card>span{
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  #section03 .dask_only .card:nth-of-type(1)>span{
+    background: url(../image/section03_icon1.png) no-repeat center/cover;
+  }
+  #section03 .dask_only .card:nth-of-type(2)>span{
+    background: url(../image/section03_icon2.png) no-repeat center/cover;
+  }
+  #section03 .dask_only .card:nth-of-type(3)>span{
+    background: url(../image/section03_icon3.png) no-repeat center/cover;
+  }
+  #section03 .dask_only .card_txt h6{
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  #section03 .dask_only .card_txt p{
+    font-size: 1.4rem;
+  }
+  #section03 .swiper-container{
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #section03 .swiper-container:hover .swiper-wrapper{
+    animation-play-state: paused;
+  }
+  #section03 .swiper-wrapper{
+    width: 360rem;
+    margin-top: 0;
+    cursor: pointer;
+    animation: pr_ani 30s linear infinite;
+  }  
+
+  #section04{width: 90%;}
+  #section04 .accordion .title{text-align: center;}
+  
+  @keyframes pr_ani {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+  }
+
+}
+
+@media screen and (min-width:1300px){
+  
+  .mob_only{display: none;}
+  .more_btn{
+    font-size: 2rem;
+    padding: 1.2rem 2.1rem;
+  }
+
+  main{
+    position: relative;
+    height: 100vh;
+  }
+  main .moMain_images{display: none;}
+  main .dask_only{
+    display: inline-block;
+    position: absolute;    
+    width: 17%;
+    height: 100vh;
+    background-color: #dfeaff;
+  }
+  main .main_tit{
+    width: 100rem;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7rem;
+  }
+  main .main_text p:first-child{font-size: 4rem;}
+  main .main_text p:nth-child(2){
+    width: max-content;
+    margin-left: 6rem;
+  }
+  main .main_text .text{
+    display: inline-block;
+    font-size: 7.5rem;
+    min-width: 35rem;
+    white-space: nowrap;
+    text-align: right;
+  }
+  main .main_text span:nth-of-type(2){font-size: 5rem;}
+  main .main_images{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    overflow: hidden;
+  }
+  main .main_images img{
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+  }
+
+  .scrolling main .dask_only{display: none;}
+
+  section .rel{
+    width: 130rem;
+    margin: auto;
+  }
+  #section01{
+    width: 100%;
+    margin: 20rem auto;
+  }
+  #section01 .text{
+    display: flex;
+    justify-content: space-between;
+  }
+  #section01 .text_left{font-size: 4.3rem;}
+  #section01 .text_left b{font-size: 5.2rem;}
+  #section01 .text_right{
+    position: relative;
+    font-size: 5.5rem;
+    margin-right: 20rem;
+  }
+  #section01 .text_right b{font-size: 6rem;}
+  #section01 .text_right:after{
+    content: '';
+    position: absolute;
+    top: -70%;
+    right: -15rem;
+    width: 22rem;
+    height: 50rem;
+    background: url(../image/section01_11.png) no-repeat center/contain;
+    z-index: 1;
+  }
+  #section01 .content{
+    flex-direction: row;
+    margin-top: 10rem;
+    column-gap: 6rem;
+  }
+  #section01 .content .caption{height: 50rem;}
+  #section01 .content .cap2{margin-top: 0;}
+  #section01 .content .cap1:after,
+  #section01 .content .cap2:after{
+    height: 90%;
+    right: 0;
+  }
+  #section01 .content .cap1:after{
+    background: url(../image/section01_3.png) no-repeat center/contain;
+    width: 55%;
+    bottom: -14%;
+  }
+  #section01 .content .cap2:after{
+    background: url(../image/section01_2.png) no-repeat center/contain;
+    width: 60%;
+    bottom: -16%;
+  }
+
+  #section02 .s2_content .rel{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 10rem;
+  }
+  #section02 .menu_btn{font-size: 2rem;}
+  #section02 .itmes{
+    margin: 5rem 0 0;
+    width: 50%;
+    height: 60%;
+  }
+  #section02 div[class*=key]{font-size: 2.8rem;}
+  #section02 div[class*=key] img{
+    width: 5rem;
+    height: 5rem;
+  }
+  #section02 .key1{
+    top: 0;
+    left: 35%;
+  }
+  #section02 .key2{
+    top: 40%;
+    left: 0;
+  }
+  #section02 .key3{
+    bottom: 5%;
+    left: 25%;
+  }
+  #section02 .content{
+    width: 55rem;
+    height: 70rem;
+    flex-direction: column;
+    bottom: 5%;
+    right: 5%;
+  }
+  #section02 .caption{
+    display: inline-block;
+    padding: 6rem 3rem;
+  }
+  #section02 .content div:nth-child(1){
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+  #section02 .caption h3{font-size: 2.9rem;}
+  #section02 .caption p{font-size: 2.5rem;}
+  #section02 .caption span{font-size: 2rem;}
+
+  #section02 .caption .s2_btn{float: right;}
+
+  #section02 div[class*=card]>span{
+    font-size: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 4.5rem;
+  }
+  #section02 div[class*=card] img{
+    position: relative;
+    margin-top: -8rem;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    border: .3rem solid #fff;
+  }
+  #section02 div[class*=card] p{
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.4rem 1rem;
+  }
+  #section02 .card1{
+    top: 5%;
+    left: 10%;
+  }
+  #section02 .card2{
+    bottom: 25%;
+    left: 13%;
+  }
+  #section02 .card3{
+    top: 5%;
+    right: 40%;
+  }
+  #section02 .card4{
+    bottom: 45%;
+    right: 20%;
+  }
+  #section02 .cards{width: 85%;}
+  #section02 .s2_text{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-size: 4.5rem;
+  }
+  #section02 .s2_text b{font-size: 5rem;}
+
+  #section03 .content .text_tit{width: 100%;}
+  #section03 .content h2{font-size: 3.5rem;}
+  #section03 .text p{font-size: 3rem;}
+  #section03 .text span{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  #section03 .caption2{
+    display: flex;
+    column-gap: 10rem;
+    align-items: flex-end;
+    margin-top: -20rem;
+    margin-bottom: 10rem;
+    width: 100%;
+  }
+  #section03 .dask_only{flex: 1;}
+  #section03 .dask_only .card .teblet_only{display: none;}
+  #section03 .dask_only .card{
+    column-gap: 2.5rem;
+    padding: 2rem 0;
+  }
+  #section03 .dask_only .card>span{
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  #section03 .dask_only .card_txt h6{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  #section03 .dask_only .card_txt p{font-size: 1.6rem;}
+  #section03 table{
+    width: 65rem;
+    font-size: 1.8rem;
+    margin: 5rem auto;
+  }
+  #section03 table th,
+  #section03 table td{
+    padding: 2.5rem;
+    transform: translateY(1rem);
+    border: 0.1rem solid #ddd;
+  }
+  #section03 table th{
+    background-color: #D6E3FF;
+    width: 15rem;
+    color: #666;
+    font-weight: 500;
+  }
+  #section03 table td{font-weight: 600;}
+  #section03 table td:last-child{
+    font-size: 2rem;
+    color: var(--mainColor);
+  }
+  #section03 table td span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #666;
+  }
+  #section03 .swiper-container{position: relative;}
+    #section03 .swiper-container:hover .swiper-wrapper{
+    animation-play-state: paused;
+  }
+  #section03 .swiper-container:before,
+  #section03 .swiper-container:after{
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(to right, #fff 0%, rgba(225,225,225,0) 100%);
+    z-index: 100;
+  }
+  #section03 .swiper-container:before{left: 0;}
+  #section03 .swiper-container:after{
+    right: 0;
+    transform: rotate(180deg);
+  }
+  
+  #section04 h2 {font-size: 3.5rem;}
+  #section04 .accordion .title{
+    padding: 2.2rem;
+    text-align: center;
+    font-size: 1.9rem;
+    border-bottom: 0.3rem solid var(--mainColor);
+  }
+  #section04 .accordion .content{
+    font-size: 1.7rem;
+    padding: 5rem 20rem;
+    line-height: 2.2rem;
+    border-bottom: 0.07rem solid #ddd;
+  }
+
+}
+
+
+
+
+
+
+
