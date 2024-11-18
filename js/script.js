@@ -123,7 +123,7 @@ $(document).ready(function(){
     $(this).siblings().find(".item").removeClass("active");
   });
 
-  if($(window).width() > 600) {
+  if($(window).width() > 760) {
     let colneElement = $("#section03 .swiper-wrapper").clone(true);
     $(colneElement).appendTo("#section03 .swiper-container");
   } 
@@ -137,17 +137,32 @@ $(document).ready(function(){
     $(this).next().stop().slideToggle();
   });
 
+  var cachedWidth = $(window).width();
+  $(window).resize(function () {
+    var newWidth = $(window).width();
+    if (newWidth !== cachedWidth) {
+      cachedWidth = newWidth;
+    }
+  });
+
   $(window).resize(function () {
     document.location.reload();
   });
 
-  var delay = 300;
-  var timer = null;
-  $(window).on('resize', function () {
-    clearTimeout(timer);
-    timer = setTimeout(function () {
-      document.location.reload();
-    }, delay);
+  var cachedWidth = $(window).width();
+  $(window).resize(function () {
+    var newWidth = $(window).width();
+    if (newWidth !== cachedWidth) {
+      var delay = 300;
+      var re_timer = null;
+      $(window).on('resize', function () {
+        clearTimeout(re_timer);
+        re_timer = setTimeout(function () {
+          document.location.reload();
+        }, delay);
+      });
+      cachedWidth = newWidth;
+    }
   });
   
   });

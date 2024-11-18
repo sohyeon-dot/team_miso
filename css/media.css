@@ -107,16 +107,20 @@
     right: 0;
   }
   #section02 .content{
+    height: 30%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 2rem;
     bottom: 5%;
   }
   #section02 .caption{
     flex: 1;
+    height: max-content;
     display: flex;
     flex-direction: column;
+    padding: 3rem;
   }
-  #section02 .content div:nth-child(1){padding-top: 4.5rem;}
+  #section02 .content div:nth-child(1){padding: 4.3rem 3rem;}
   #section02 .caption .dask_only{display: inline;}
   #section02 .caption .s2_btn{
     width: max-content;
@@ -197,7 +201,7 @@
     width: 360rem;
     margin-top: 0;
     cursor: pointer;
-    animation: pr_ani 30s linear infinite;
+    animation: pr_ani 60s linear infinite;
   }  
 
   #section04{width: 90%;}
@@ -329,8 +333,8 @@
   #section02 .menu_btn{font-size: 2rem;}
   #section02 .itmes{
     margin: 5rem 0 0;
-    width: 50%;
-    height: 60%;
+    width: 35%;
+    height: 55%;
   }
   #section02 div[class*=key]{font-size: 2.8rem;}
   #section02 div[class*=key] img{
@@ -350,19 +354,18 @@
     left: 25%;
   }
   #section02 .content{
-    width: 55rem;
-    height: 70rem;
+    width: 35%;
+    height: 60%;
     flex-direction: column;
     bottom: 5%;
-    right: 5%;
+    right: 0;
+    transform: translateX(0%);
   }
   #section02 .caption{
     display: inline-block;
-    padding: 6rem 3rem;
-  }
-  #section02 .content div:nth-child(1){
-    padding-top: 8rem;
-    padding-bottom: 5rem;
+    width: 90%;
+    height: max-content;
+    flex: 1;
   }
   #section02 .caption h3{font-size: 2.9rem;}
   #section02 .caption p{font-size: 2.5rem;}
@@ -379,8 +382,8 @@
   #section02 div[class*=card] img{
     position: relative;
     margin-top: -8rem;
-    width: 23rem;
-    height: 23rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     border: .3rem solid #fff;
   }
@@ -396,7 +399,7 @@
     left: 10%;
   }
   #section02 .card2{
-    bottom: 25%;
+    bottom: 5%;
     left: 13%;
   }
   #section02 .card3{
@@ -407,14 +410,17 @@
     bottom: 45%;
     right: 20%;
   }
-  #section02 .cards{width: 85%;}
+  #section02 .cards{
+    width: 85%;
+    height: 35%;
+  }
   #section02 .s2_text{
     position: absolute;
     bottom: 5%;
     right: 10%;
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
-  #section02 .s2_text b{font-size: 5rem;}
+  #section02 .s2_text b{font-size: 4rem;}
 
   #section03 .content .text_tit{width: 100%;}
   #section03 .content h2{font-size: 3.5rem;}
