@@ -152,8 +152,9 @@
     margin-top: 0;
   }
   #section03 .caption2{
+    width: 95%;
     display: flex;
-    column-gap: 3rem;
+    column-gap: 5rem;
     align-items: center;
     margin: -1rem auto 0;
     min-width: 77rem;
@@ -188,6 +189,7 @@
   #section03 .dask_only .card_txt p{
     font-size: 1.4rem;
   }
+  #section03 table{flex: 1;}
   #section03 .swiper-container{
     display: flex;
     width: 100%;

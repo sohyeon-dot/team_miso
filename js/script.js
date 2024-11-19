@@ -164,6 +164,21 @@ $(document).ready(function(){
       cachedWidth = newWidth;
     }
   });
+
+  var dwidth = jQuery(window).width();
+  jQuery(window).bind('resize', function(e){
+
+      var wwidth = jQuery(window).width();
+
+      if(dwidth!==wwidth){
+      dwidth = jQuery(window).width();
+
+      if (window.RT) clearTimeout(window.RT);
+      window.RT = setTimeout(function(){
+          this.location.reload(false);
+      }, 1000);
+  }
+  });
   
   });
 

@@ -11,7 +11,7 @@ section{
   text-align: center;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 .goto-top>i{
   font-size: 2.2rem;
@@ -391,7 +391,7 @@ main .main_text > *{opacity: 0;}
   margin-top: 1rem;
 }
 #section03 table{
-  width: 45rem;
+  width: 95%;
   text-align: center;
   font-size: 1.5rem;
   margin: 5rem auto;
@@ -486,6 +486,8 @@ main .main_text > *{opacity: 0;}
   margin-bottom: 4rem;
 }
 #section04 .accordion .title{
+  width: 95%;
+  margin: auto;
   padding: 1.8rem;
   font-size: 1.6rem;
   font-weight: 600;
