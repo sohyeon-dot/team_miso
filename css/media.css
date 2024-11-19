@@ -10,10 +10,10 @@
     top: 23%;
     font-size: 5rem;
   }
-  main .main_text p:first-child{font-size: 3rem;}
+  main .main_text p:first-child{font-size: 2.3rem;}
   main .main_text .text{font-size: 5.4rem;}
   main .main_text p:nth-of-type(3){
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     font-weight: 600;
   }
   main .moMain_images{
@@ -241,10 +241,13 @@
     transform: translateX(-50%);
     font-size: 7rem;
   }
-  main .main_text p:first-child{font-size: 4rem;}
+  main .main_text p:first-child{font-size: 2.5rem;}
   main .main_text p:nth-child(2){
     width: max-content;
     margin-left: 6rem;
+  }
+  main .main_text p:nth-child(3){
+    font-size: 5.3rem;
   }
   main .main_text .text{
     display: inline-block;
