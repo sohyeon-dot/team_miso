@@ -13,8 +13,8 @@ body {
 }
 .goto-top {
   position: fixed;
-  bottom: 7rem;
-  right: 2.5rem;
+  bottom: 6rem;
+  right: 2rem;
   text-align: center;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -31,8 +31,8 @@ body {
 .goto-top > a {
   position: relative;
   display: block;
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 6rem;
+  height: 6rem;
   background: url(../image/icon-down.png) no-repeat center var(--mainColor);
   border-radius: 50%;
   padding: 1.3rem;
