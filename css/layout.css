@@ -123,18 +123,18 @@ main .main_text > *{opacity: 0;}
 
 #section02{
   padding: 0;
-  height: 100vh;
+  height: 95rem;
 }
 #section02 .s2_content{
   display: none;
   width: 100%;
-  height: 100%;
+  height: 95rem;
 }
 #section02 .s2_content.active{display: block;}
 #section02 .images img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 95rem;
   object-fit: cover;
   display: none;
 }
@@ -234,7 +234,7 @@ main .main_text > *{opacity: 0;}
 #section02 .s2_content .main_image img{
   position: absolute;
   width: 100%;
-  height: 95%;
+  height: 95rem;
   object-fit: cover;
 }
 #section02 #capTab2 .s2_tit{
@@ -361,12 +361,12 @@ main .main_text > *{opacity: 0;}
   width: 95%;
   text-align: center;
   font-size: 1.4rem;
-  margin: 5rem auto;
+  margin: 3rem auto;
   border-collapse: collapse;
 }
 #section03 table th,
 #section03 table td{
-  padding: 1.5rem;
+  padding: 1.1rem;
   transform: translateY(1rem);
   border: 0.1rem solid #ddd;
 }
@@ -398,10 +398,10 @@ main .main_text > *{opacity: 0;}
   flex: 1;
   background-color: #eee;
   border-radius: 0.5rem;
-  padding: 1.2rem;
+  padding: 1rem;
 }
 #section03 .cards .card h6{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
@@ -453,7 +453,7 @@ main .main_text > *{opacity: 0;}
   margin-bottom: 4rem;
 }
 #section04 .accordion .title{
-  width: 95%;
+  width: 100%;
   margin: auto;
   padding: 1.8rem;
   font-size: 1.5rem;
