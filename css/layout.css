@@ -60,19 +60,19 @@ main .main_tit{
   top: 45%;
   width: 100%;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 500;
 }
 main .main_text p:first-child{
   font-size: 1.5rem;
 }
 main .main_text .text{
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #0036ac;
 }
 main .main_text p:nth-child(3){
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 main .main_images{display: none;}
 main .moMain_images{
@@ -124,7 +124,7 @@ main .main_text > *{opacity: 0;}
   line-height: 2.6rem;
 }
 #section01 .content .cap1{
-  
+  margin-left: -1rem;
   background-color: var(--subColor);
 }
 #section01 .content .cap2{
@@ -167,22 +167,24 @@ main .main_text > *{opacity: 0;}
 
 #section02{
   padding: 0;
-  height: 95vh;
+  height: 100vh;
 }
 #section02 .s2_content{
   display: none;
   width: 100%;
-  height: inherit;
+  height: 100%;
 }
 #section02 .s2_content.active{display: block;}
 #section02 .images img{
   position: absolute;
   width: 100%;
-  height: 95%;
+  height: 100%;
   object-fit: cover;
   display: none;
 }
 #section02 .s2_content .rel{
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.5);
   padding: 2rem;
 }
@@ -498,7 +500,7 @@ main .main_text > *{opacity: 0;}
   width: 95%;
   margin: auto;
   padding: 1.8rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   border-bottom: 0.2rem solid var(--mainColor);
   cursor: pointer;
