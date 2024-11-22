@@ -138,29 +138,27 @@ $(document).ready(function(){
   });
 
   var cachedWidth = $(window).width();
-  $(window).resize(function () {
+  $(window).resize(function(){
     var newWidth = $(window).width();
-    if (newWidth !== cachedWidth) {
+    if(newWidth !== cachedWidth){
+
       cachedWidth = newWidth;
     }
   });
 
-  $(window).resize(function () {
-    document.location.reload();
-  });
-
   var cachedWidth = $(window).width();
-  $(window).resize(function () {
+  $(window).resize(function(){
     var newWidth = $(window).width();
-    if (newWidth !== cachedWidth) {
-      var delay = 300;
-      var re_timer = null;
-      $(window).on('resize', function () {
-        clearTimeout(re_timer);
-        re_timer = setTimeout(function () {
-          document.location.reload();
-        }, delay);
-      });
+    if(newWidth !== cachedWidth){
+
+    var delay = 300;
+    var re_timer = null;
+    $(window).on('resize', function(){
+      clearTimeout(re_timer);
+      re_timer = setTimeout(function(){
+      document.location.reload();
+      }, delay);
+    });
       cachedWidth = newWidth;
     }
   });
@@ -168,20 +166,16 @@ $(document).ready(function(){
   var dwidth = jQuery(window).width();
   jQuery(window).bind('resize', function(e){
 
-      var wwidth = jQuery(window).width();
+    var wwidth = jQuery(window).width();
 
-      if(dwidth!==wwidth){
+    if(dwidth!==wwidth){
       dwidth = jQuery(window).width();
 
-      if (window.RT) clearTimeout(window.RT);
+    if (window.RT) clearTimeout(window.RT);
       window.RT = setTimeout(function(){
-          this.location.reload(false);
+        this.location.reload(false); 
       }, 1000);
-  }
-  });
-  
+    }
   });
 
-
-
-
+});
