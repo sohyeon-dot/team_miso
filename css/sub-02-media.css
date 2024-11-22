@@ -282,7 +282,7 @@
 
 }
 
-@media screen and (min-width:890px) {
+@media screen and (min-width:800px) {
     #section1 table {
             width: 80rem;
             font-size: 1.8rem;
