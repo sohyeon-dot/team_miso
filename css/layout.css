@@ -140,7 +140,7 @@ main .main_text > *{opacity: 0;}
 }
 #section02 .s2_content .rel{
   width: 100%;
-  height: 100%;
+  height: 95rem;
   background: rgba(0,0,0,0.5);
   padding: 2rem;
 }
@@ -446,6 +446,7 @@ main .main_text > *{opacity: 0;}
 
 #section03 table tr{opacity: 0;}
 
+#section04{padding: 1rem;}
 #section04 h2 {
   font-size: 3rem;
   font-weight: 500;
