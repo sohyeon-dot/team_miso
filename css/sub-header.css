@@ -1,0 +1,199 @@
+header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 6.3rem;
+  background-color: #caddfe;
+  transition: 0.3s ease-in-out;
+}
+header .rel{
+  position: relative;
+  width: 100%;
+  height: 6.3rem;
+  padding: 2rem 2rem 0;
+}
+header .header_left{
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .header_left img{width: 10rem;}
+header .header_right{
+  position: absolute;
+  right: 1rem;
+}
+
+/* 모바일___햄버거메뉴 */
+.mob_btn{
+  position: relative;
+  display: block;
+  width: 2.8rem;
+  height: 1.8rem;
+  z-index: 100;
+}
+.mob_btn span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--mainColor);
+  border-radius: 0.3rem;
+  text-indent: -9999px;
+}
+.mob_btn span:nth-child(1){top: 0;}
+.mob_btn span:nth-child(2){top: 50%;}
+.mob_btn span:nth-child(3){top: 100%;}
+
+/* subNav */
+.subNav .dask_menu,
+.subNav .sub_menu{display: none;}
+.subNav li.mob_menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  display: inline-block;
+  background-color: var(--mainColor);
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.3rem rgba(255,255,255,0.3);
+  text-align: center;
+  color: #fff;
+  font-size: 1.03rem;
+  padding: 1rem;
+  line-height: 3rem;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+}
+.subNav li.mob_menu span{
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.3rem auto 0;
+}
+.subNav li.mob1 span{
+  background: url(../image/mo-menu-01.png) no-repeat center;
+}
+.subNav li.mob2 span{
+  background: url(../image/mo-menu-03.png) no-repeat center;
+}
+.mOpen .subNav{
+  position: absolute;
+  top: 6.3rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.mOpen .mob_btn span{background-color: #333;}
+.mOpen .mob_btn span:nth-child(1){
+  transform: rotate(45deg);
+  top: 50%;
+}
+.mOpen .mob_btn span:nth-child(2){
+  transform: translateX(100%);
+  opacity: 0;
+}
+.mOpen .mob_btn span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 50%;
+}
+.mOpen .subNav li.mob1{
+  top: -3rem;
+  right: 10rem;
+  opacity: 1;
+}
+.mOpen .subNav li.mob2{
+  top: 5rem;
+  right: 3rem;
+  opacity: 1;
+}
+
+@media screen and (min-width:768px){
+  
+  header .mob_btn{display: none;}
+  header .header_left{
+    left: 10%;
+  }
+  .subNav{
+    position: relative;
+    left: 35%;
+  }
+  .subNav .main_menu{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .subNav .main_menu .dask_menu{
+    display: inline-block;
+    position: relative;
+  }
+  .subNav .main_menu .dask_menu>a{
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: 0.35s;
+  }
+  .subNav .main_menu .dask_menu:hover>a{
+    color: var(--mainColor);
+  }
+  .subNav .sub_menu{
+    position: absolute;
+    top: 163%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: inline-block;
+    display: none;
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.2);
+  }
+  .subNav .sub_menu li>a{
+    display: block;
+    border-bottom: 0.15rem solid var(--mainColor);
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.3rem 1.2rem 1.2rem 5rem;
+  }
+  .subNav .sub_menu li a>span{
+    position: absolute;
+    left: 1.5rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+  }
+  .subNav .sub1{width: 105%;}
+  .subNav .sub2 li>a{padding-left: 7rem;}
+  .subNav .sub2 li a>span{left: 3rem;}
+  .subNav .sub1 li:nth-of-type(1) a>span{
+    background: url(../image/menu-01.png) no-repeat center/cover;
+    top: 0.9rem;
+  }
+  .subNav .sub1 li:nth-of-type(2) a>span{
+    background: url(../image/menu-02.png) no-repeat center/cover;
+  }
+  .subNav .sub2 li:nth-of-type(1) a>span{
+    background: url(../image/menu-03.png) no-repeat center/cover;
+  }
+  .subNav .sub2 li:nth-of-type(2) a>span{
+    background: url(../image/menu-04.png) no-repeat center/cover;
+  }
+  .subNav .sub_menu li a:hover span{
+    animation: icon-ani 0.5s linear infinite alternate;
+  }
+}
+
+@media screen and (min-width:1300px){
+
+  header .rel{
+    width: 130rem;
+    height: 7rem;
+    margin: auto;
+  }
+}
+
+@keyframes icon-ani {
+  0%{transform: rotate(8deg);}
+  100%{transform: rotate(-6deg);}
+}

@@ -1,0 +1,722 @@
+
+@media screen and (min-width:768px){
+
+.goto-top>a{display: none;}
+
+#section1 .tit_wrap{margin-left: 10rem;}
+#section1 .tit{
+        line-height: 5rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+.s1-visual{display: none;}
+.s1-visual-pc{
+    display:block;
+    float: right;
+    margin-right: 12rem;
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 4rem;
+    }
+    #section2{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #section2 .tit_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+    }
+    #section2 .tit_wrap h2{
+        font-size: 3.5rem;
+        padding: 1rem;
+        border: 1px solid #000;
+    }
+
+    #section2 p{
+        font-size: 2rem;
+        text-indent: -4rem;
+        height: fit-content;
+        margin-top: 10rem;
+        width: 20rem;
+    }
+
+    #section2 .chk-list{width: 75rem;
+        display: flex;
+        align-items: center;
+    }
+    #section2 .content{
+        padding: 5rem;
+        background-color: #fff;
+        border-radius: 5rem;
+        width: 20rem;
+        height: 20rem;
+        box-shadow: 0 0.2rem 1rem rgba(77, 77, 77, 0.3);
+    }
+
+    #section2 .content{
+        text-align: left;
+    }
+    #section2 .dday{
+        height: 2rem;
+        width: 2rem;
+    }
+    #section2 h3{ font-size: 1.8rem;}
+    #section2 h4{
+        background-color: #CADDFE;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: .5rem;
+        padding: 1rem;
+        width: max-content;
+        height: 4.5rem;
+        border-radius: 5px;
+    }
+
+    #section2 .content>h4::before{
+        content: '';
+        background-color: #0051FF;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 1.6rem;
+    }
+/* sub 2 이사청소 section 2 */
+
+    .s2_contents {
+        margin-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 60rem;
+    }
+
+    .s2_head {margin-bottom: 2rem;}
+
+    .s2_head h2 {
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .s2_head span {
+        font-size: 2rem;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .s2_content {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .s2_btn {
+        display: flex;
+        margin-bottom: 1rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .s2_btn li {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-color: #f1f1f1;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .s2_btn li.active {
+        background-color: var(--mainColor);
+        color: #fff;
+    }
+
+    .item_info {flex: 1;}
+
+    .item_info>li {display: none;}
+
+    .item_info>li.active {
+        display: block;
+    }
+
+    .item_info img {
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 3rem;
+        border-radius: .5rem;
+        object-fit: cover;
+    }
+
+    .item_info div span {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .item_info div span::before {
+        content: '\f00c';
+        font-family: fontawesome;
+        display: inline-block;
+        margin-right: 1rem;
+        color: var(--mainColor);
+        background-color: #D6E3FF;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        font-size: 2rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+
+    .title {
+        font-size: 50px;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .description {
+        color: #fff;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .read-more {
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 3px 16px;
+        margin-top: 24px;
+        border: 1px solid #fff;
+    }
+
+    /* section 3 ---------- */
+    #section3 {
+        margin-top: 8rem;
+        margin-left: 3rem;
+    }
+
+    #section3 .tit_wrap p {
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #section3 .tit_wrap h5 {
+        color: #666;
+        width: 25rem;
+        left: 68%;
+        position: relative;
+        font-size: 2rem;
+    }
+
+    #section3 .tit_wrap h3 {
+        font-size: 4rem;
+        color: #000;
+        text-align: left;
+    }
+
+    #section3 .tit_wrap h3::after {
+        content: '';
+        position: absolute;
+        height: 15rem;
+        width: 15rem;
+        background: url(../image/tdesign_chat-bubble.png) no-repeat;
+    }
+
+    #section3 .tit_wrap h4 {
+        font-size: 2rem;
+        position: relative;
+        text-align: center;
+        width: 25rem;
+        left: 68%;
+        margin-bottom: 10rem;
+    }
+
+    #section3 .review {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 80rem;
+        height: 15rem;
+        padding: .5rem 1rem;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+        background: #FDFDFD;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+        margin: 2.5rem;
+    }
+
+    #section3 .review .city {font-size: 1.2rem;}
+    #section3 .review .re_textdown {font-size: 1.5rem;}
+    #section3 .review .re_img img{
+        height: 10rem;
+        width: 15rem;
+    }
+    #section3 .review:nth-child(2) {transform: translateX(-rem);}
+
+    #section3 .review:nth-child(3) {transform: translateX(10rem);}
+
+    #section3 .review:nth-child(4) {transform: translateX(-5rem);}
+
+    #section3 .review:nth-child(5) {transform: translateX(0rem);}
+
+    #section3 .review:nth-child(6) {transform: translateX(10rem);}
+    
+
+}
+
+@media screen and (min-width:890px) {
+    #section1 table {
+            width: 80rem;
+            font-size: 1.8rem;
+            margin: 10rem auto;
+        }
+    
+        #section1 table th,
+        #section1 table td {
+            padding: 1.5rem;
+            border: 0.1rem solid #ddd;
+        }
+    
+        #section1 table th {
+            background-color: #D6E3FF;
+            width: 13rem;
+            color: #666;
+            font-weight: 500;
+        }
+    
+        #section1 table td {
+            font-weight: 600;
+        }
+    
+        #section1 table td:last-child {
+            font-size: 2rem;
+            color: var(--mainColor);
+        }
+    
+        #section1 table td span {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #666;
+        }
+        #s2{margin-top: 25rem;}
+}
+
+
+@media screen and (min-width:1300px){
+    
+    main{
+        height: 60rem;
+    }
+    main .m-visual{
+        width: 100%;
+        height: 50rem;
+    }
+    main .m-visual.second{
+        width: 100%;
+        height: 50rem;
+    }
+    main .main-inner{
+        display: flex;
+        align-items: center;
+    }
+    
+    main h2, main .main-inner a{margin-top: 10rem;}
+    main h2{
+        padding-left: 15rem;
+        font-size: 4rem;
+    }
+    main .main-inner a{margin-left: 20rem;}
+    .mob_only{display: none;}
+    #section1{
+        height: 70rem;
+    }
+    #section1 .txt1{
+        padding-left: 37rem;
+        color: #666;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        text-align: left;
+    }
+    #section1 .article{
+        height: 5.6rem;
+        width: 5.6rem;
+    }
+    #section1 .tit{
+        padding-left: 37rem;
+        line-height: 8rem;
+        font-size: 5rem;
+        text-align: left;
+    }
+    #section1 .s1-visual{display: none;}
+    .s1-visual-pc{
+        float: right;
+        margin-right: 50rem;
+        width: 45rem;
+        height: 25rem;
+    }
+    #section1 table{
+        width: 100rem;
+        font-size: 2rem;
+        margin: 10rem auto;
+    }
+        #section1 table th,
+        #section1 table td{
+        padding: 2.5rem;
+        border: 0.1rem solid #ddd;
+        }
+    #section1 table th{
+        background-color: #D6E3FF;
+        width: 15rem;
+        color: #666;
+        font-weight: 500;
+    }
+    #section1 table td{font-weight: 600;}
+    #section1 table td:last-child{
+        font-size: 2.5rem;
+        color: var(--mainColor);
+    }
+    #section1 table td span{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #666;
+    }
+
+    #section2{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #section2 .tit_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    #section2 .tit_wrap h2{
+        font-size: 3.5rem;
+        padding: 1rem;
+        border: 1px solid #000;
+    }
+
+
+    #section2 .chk-list{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        width: 180rem;
+        height: 55rem;
+        background: rgba(255, 225, 0, 0.30);
+        margin-bottom: 4rem;
+    }
+    #section2 .content{
+        padding: 5rem;
+        background-color: #fff;
+        border-radius: 5rem;
+        width: 40rem;
+        height: 30rem;
+        box-shadow: 0 0.2rem 1rem rgba(77, 77, 77, 0.3);
+    }
+    
+    #section2 .content{
+        text-align: left;
+        margin-left: 3rem;
+    }
+    #section2 h3{ font-size: 3rem;}
+
+    #section2 h4{
+        background-color: #CADDFE;
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem;
+        margin-left: 5rem;
+        padding: 1rem;
+        width: fit-content;
+        height: 4.5rem;
+        border-radius: 5px;
+    }
+
+    #section2 .content>h4::before{
+        content: '';
+        background-color: #0051FF;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 1.6rem;
+    }
+
+/* sub 2 이사청소 section 2 */
+#s2 {
+    padding: 3rem;
+}
+
+.s2_contents {
+    margin-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60rem;
+    gap: 2rem;
+}
+
+.s2_head {
+    text-align: right;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
+.s2_head h2 {
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.s2_head span {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.s2_content {
+    display: flex;
+    height: 80rem;
+}
+
+.s2_btn {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.s2_btn li {
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 50%;
+    margin-left: 10rem;
+    background-color: #ffff;
+    box-shadow: 0 .1rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.s2_btn li.active {
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+.item_info {
+    flex: 1;
+}
+
+.item_info>li {
+    display: none;
+}
+
+.item_info>li.active {
+    display: block;
+}
+
+.item_info img {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.item_info div span {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.item_info div span::before {
+    content: '\f00c';
+    font-family: fontawesome;
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--mainColor);
+    background-color: #D6E3FF;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+/*Tab Menu ---------------------------------------*/
+
+    #tabmenu{
+    width:960px;
+    height:500px;
+    margin:30px auto;
+    padding:30px;
+    background:#f3f6f7;
+    position: relative;
+    display: inline-flexbox;
+    justify-self: center;
+    align-self:baseline;
+    justify-self: center;
+    }
+    .tab-header{
+    width:200px;
+    position:relative;
+    }
+    .tab li{
+    width:160px; 
+    height:70px; /*->jQuery에서 탭메뉴 움직이는 거리*/
+    box-sizing:border-box;
+    float:left;
+    color:#000;
+    border-radius: 5rem;
+    font-size:17px;
+    line-height:70px;
+    text-align:center;
+    letter-spacing:1px; 
+    position:relative;
+    z-index:100;  
+    }
+
+    .tab li.active{color:#fff;} 
+    .tab-highlight{  
+    background-color: #0051FF;
+    border-radius: 5rem;
+    width: 160px;
+    height:70px; 
+    position:absolute;
+    width:160px;
+    left:0px;
+    }
+
+    /*Tab Mneu Contents ---------------------------------------*/
+    .tab-contents div{
+    margin-top:40px;
+    width:700px;
+    height:430px;
+    padding:20px;
+    display:none;   
+    }
+    .tab-contents div.active{display:block}
+
+    .tab-contents #tab1{background-image: url(../image/image.png)}
+    .tab-contents #tab2{background-color:#64416e;}
+    .tab-contents #tab3{background-color:#397741;}
+    .tab-contents #tab4{background-color:#8f7341;}
+    .tab-contents #tab4 p{font-size: 2rem;}
+    .title {
+    font-size:50px;
+    color: #fff;
+    font-weight:normal;
+    text-transform:uppercase;
+    margin-bottom:25px;
+    }
+    .description {
+    color: #fff;
+    font-size:14px;
+    line-height:22px;
+    }
+    .read-more{
+    color: #fff;
+    font-size:14px;
+    text-transform:uppercase;
+    display:inline-block;
+    padding:3px 16px;
+    margin-top:24px;
+    border:1px solid #fff;
+    }
+
+    /* section 3 ---------- */
+    #section3{
+    margin-top: 8rem;
+    margin-left: 3rem;
+    }
+    #section3 .tit_wrap p{
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+    #section3 .tit_wrap h5{
+        color: #666;
+        width: 25rem;
+        position: relative;
+        font-size: 2.5rem;
+    }
+    #section3 .tit_wrap h3{
+        margin: 0;
+        font-size: 5rem;
+        color: #000;
+        text-align: left;
+    }
+    #section3 .tit_wrap h3::after{
+        content: '';
+        position: absolute;
+        height: 15rem;
+        width: 15rem;
+        background: url(../image/tdesign_chat-bubble.png) no-repeat;
+    }
+    #section3 .tit_wrap h4{
+        font-size: 2rem;
+        position: relative;
+        text-align: center;
+        width: 25rem;
+        left: 68%;
+        margin-bottom: 10rem;
+    }
+    #section3 .review{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 100rem;
+        height: 25rem;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+        background: #FDFDFD;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+        margin: 2.5rem;
+    }
+        #section3 .review .re_img img {
+            height: 20rem;
+            width: 25rem;
+        }
+
+    #section3 .review .city{font-size: 1.5rem;}
+    #section3 .review .re_textdown{font-size: 2rem;}
+
+    #section3 .review:nth-child(2) {transform: translateX(-40rem);}
+    #section3 .review:nth-child(3) {transform: translateX(40rem);}
+    #section3 .review:nth-child(4) {transform: translateX(-30rem);}
+    #section3 .review:nth-child(5) {transform: translateX(30rem);}
+    #section3 .review:nth-child(6){transform: translateX(-20rem);}
+
+}
