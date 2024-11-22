@@ -51,13 +51,4 @@ $(document).ready(function(){
     $(this).find(".sub_menu").stop().slideUp();
   });
 
-  $(window).on("load resize", function(){
-    let w = $(window).innerWidth();
-
-    if(w < 1300){
-      BODY.removeClass("mOpen")
-      $(".subNav").removeAttr("style");
-    }
-  });
-
 });

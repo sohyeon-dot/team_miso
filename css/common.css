@@ -13,10 +13,10 @@
   border-radius: 30rem;
   width: max-content;
   height: max-content;
-  padding: 1rem 1.5rem;
+  padding: .7rem 1.5rem;
   background-color: var(--mainColor);
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 3rem 0;
 }
 

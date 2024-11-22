@@ -4,7 +4,14 @@ footer{
   background-color: #ffea4d;
 }
 .dask_only{display: none;}
-.footer-inner address{font-style: normal;}
+.footer-inner{
+  width: 95%;
+  margin: auto;
+}
+.footer-inner address{
+  font-style: normal;
+  font-size: 1.1rem;
+}
 .footer-inner .logo{
   display: flex;
   align-items: center;
