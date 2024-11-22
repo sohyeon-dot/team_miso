@@ -8,7 +8,7 @@ section{
 }
 
 main{
-  height: 65vh;
+  height: 65rem;
   width: 100%;
 }
 main .main_tit{
@@ -80,12 +80,13 @@ main .main_text > *{opacity: 0;}
   line-height: 2.6rem;
 }
 #section01 .content .cap1{
-  margin-left: -1rem;
+  margin-left: -0.5rem;
   background-color: var(--subColor);
 }
 #section01 .content .cap2{
   background-color: var(--mainColor);
   color: #fff;
+  margin-left: 0.5rem;
 }
 #section01 .content .cap1:after,
 #section01 .content .cap2:after{
