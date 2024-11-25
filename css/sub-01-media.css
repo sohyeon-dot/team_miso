@@ -1,11 +1,7 @@
 @media screen and (min-width: 768px) {
-  html {
-    font-size: 65%;
-  }
+  html {font-size: 65%;}
 
-  .goto-top > a {
-    display: none;
-  }
+  .goto-top > a {display: none;}
 
   main {
     width: 100%;
@@ -35,22 +31,13 @@
     width: 100%;
     height: 50rem;
     position: relative;
+    overflow: hidden;
   }
-  #s1 .s1_left {
-    width: 10rem;
-  }
-  .mb {
-    width: max-content;
-  }
-  .s1_text {
-    width: max-content;
-  }
-  .s1_left h3 {
-    width: max-content;
-  }
-  .s1_text br {
-    display: inline-block;
-  }
+  #s1 .s1_left {width: 10rem;}
+  .mb {width: max-content;}
+  .s1_text {width: max-content;}
+  .s1_left h3 {width: max-content;}
+  .s1_text br {display: inline-block;}
   .dt_img {
     display: inline-block;
     width: 20rem;
@@ -58,8 +45,13 @@
     transform: translate(3rem, 3rem);
   }
   .s1_right {
+    overflow: hidden;
     transform: translateX(-10rem);
   }
+  .price_box{width: 40rem;}
+  .box_head{width: 15rem;}
+  .one_price div:not(:nth-child(1)){width: 15rem;}
+  .other div:not(:nth-child(1)){width: 15rem;}
 
   /* modal */
   .modal {
@@ -68,37 +60,23 @@
     z-index: 1;
   }
 
-  .modal_content {
-    width: 70rem;
-  }
-  .form_group input {
-    padding: 1rem;
-  }
-  .form_group input::placeholder {
-    font-size: 1.4rem;
-  }
-  .form_group .search_btn {
-    font-size: 1.4rem;
-  }
-  .modal_body p {
-    font-size: 1.2rem;
-  }
+  .modal_content {width: 70rem;}
+  .form_group input {padding: 1rem;}
+  .form_group input::placeholder {font-size: 1.4rem;}
+  .form_group .search_btn {font-size: 1.4rem;}
+  .modal_body p {font-size: 1.2rem;}
 
   /* section2 */
   #s2 {
     width: 100%;
     height: 50rem;
   }
-  .s2_contents {
-    width: 85%;
-  }
+  .s2_contents {width: 85%;}
   .s2_btn {
     flex: 0.4;
     gap: 1rem;
   }
-  .s2_btn li {
-    font-size: 1.8rem;
-  }
+  .s2_btn li {font-size: 1.8rem;}
   .item_info {
     flex: 1;
     width: 80%;
@@ -106,12 +84,8 @@
     display: flex;
     flex-direction: column;
   }
-  .item_info div span {
-    font-size: 1.8rem;
-  }
-  .item_info div p {
-    font-size: 1.4rem;
-  }
+  .item_info div span {font-size: 1.8rem;}
+  .item_info div p {font-size: 1.4rem;}
   .item_info div span::before {
     width: 2.5rem;
     height: 2.5rem;
@@ -126,36 +100,25 @@
     object-fit: cover;
     display: inline;
   }
-  .item_info div {
-    padding-top: 0;
-  }
+  .item_info div {padding-top: 0;}
 
   /* section 3 */
+  #s3{overflow: hidden;}
   #s3 .s3_head h4,
   #s3 .s3_head span {
     font-size: 1.8rem;
   }
-  .reviews {
-    grid-template-columns: 1fr;
-  }
-  .review {
-    width: 59rem;
-  }
+  .reviews {grid-template-columns: 1fr;}
+  .review {width: 59rem;}
   .re_img img {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
   }
-  .review .re_textup .star {
-    font-size: 1.8rem;
-  }
+  .review .re_textup .star {font-size: 1.8rem;}
 
-  .review .re_textup .city {
-    font-size: 1.6rem;
-  }
-  .re_textdown {
-    font-size: 1.8rem;
-  }
+  .review .re_textup .city {font-size: 1.6rem;}
+  .re_textdown {font-size: 1.8rem;}
 
   /* sub 01-2____________________________ */
 
@@ -168,12 +131,8 @@
     width: 80%;
     margin: auto;
   }
-  .s2s1_head br {
-    display: none;
-  }
-  .s2s1_head {
-    margin-bottom: 3rem;
-  }
+  .s2s1_head br {display: none;}
+  .s2s1_head {margin-bottom: 3rem;}
   .s2s1_content {
     display: flex;
     justify-content: center;
@@ -213,37 +172,23 @@
     padding: 2rem 1rem;
     font-size: 1.4rem;
   }
-  .box_row .left br {
-    display: none;
-  }
+  .box_row .left br {display: none;}
 
-  .box_row .right span {
-    letter-spacing: 0.05rem;
-  }
-  .box_row.header {
-    font-size: 1.4rem;
-  }
+  .box_row .right span {letter-spacing: 0.05rem;}
+  .box_row.header {font-size: 1.4rem;}
 
   .box_row .left {
     padding-left: 2rem;
     text-align: center;
   }
 
-  .box_row .dis {
-    font-size: 1.4rem;
-  }
-  .box p {
-    font-size: 1.4rem;
-  }
+  .box_row .dis {font-size: 1.4rem;}
+  .box p {font-size: 1.4rem;}
 
   /* section2 (서비스 절차) */
-  #s2s2 {
-    height: auto;
-  }
+  #s2s2 {height: auto;}
 
-  .s2s2_content {
-    gap: 1rem;
-  }
+  .s2s2_content {gap: 1rem;}
 
   .s2s2_img img {
     display: block;
@@ -251,17 +196,11 @@
     transform: translate(5rem, 15rem);
   }
 
-  .s2s2_texts {
-    width: 35rem;
-  }
+  .s2s2_texts {width: 35rem;}
 
-  .s2s2_text h2 {
-    font-size: 1.6rem;
-  }
+  .s2s2_text h2 {font-size: 1.6rem;}
 
-  .s2s2_text span {
-    font-size: 1.4rem;
-  }
+  .s2s2_text span {font-size: 1.4rem;}
 
   /* section3 (리뷰 섹션) */
   .s2s3_content {
@@ -283,9 +222,7 @@
     align-items: center;
   }
 
-  .review .re_texts {
-    flex: 1;
-  }
+  .review .re_texts {flex: 1;}
 
   .re_textup .star,
   .re_textup .city {
@@ -315,9 +252,7 @@
 
   /* section1 */
 
-  #s1 {
-    padding: 2rem;
-  }
+  #s1 {padding: 2rem;}
 
   .s1_left {
     width: 50rem;
@@ -332,9 +267,11 @@
     font-weight: 800;
   }
   .dt_img {
-    width: 40rem;
+    width: 35rem;
     transform: translate(20rem, -10rem);
   }
+
+  #s1 .s1_right{overflow: unset;}
 
   .box_headt {
     width: 12rem;
@@ -356,18 +293,10 @@
     width: 17rem;
     height: 9rem;
   }
-  .head {
-    font-size: 1.4rem;
-  }
-  .time {
-    font-size: 1.6rem;
-  }
-  .price {
-    font-size: 1.6rem;
-  }
-  .discount {
-    font-size: 1.6rem;
-  }
+  .head {font-size: 1.4rem;}
+  .time {font-size: 1.6rem;}
+  .price {font-size: 1.6rem;}
+  .discount {font-size: 1.6rem;}
   .info {
     font-size: 1.4rem;
     transform: translateX(-3rem);
@@ -379,34 +308,22 @@
     height: 100vh;
     margin: auto;
   }
-  .modal_body h2 {
-    font-size: 1.8rem;
-  }
+  .modal_body h2 {font-size: 1.8rem;}
   .modal_body span {
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
   }
 
   /* section2 */
-  #s2 {
-    height: 60rem;
-  }
+  #s2 {height: 60rem;}
   .s2_contents {
     width: 70%;
     margin: auto;
   }
-  .s2_head h2 {
-    font-size: 2.4rem;
-  }
-  .s2_head span {
-    font-size: 3rem;
-  }
-  .s2_btn {
-    gap: 1.5rem;
-  }
-  .s2_btn li {
-    font-size: 2rem;
-  }
+  .s2_head h2 {font-size: 2.4rem;}
+  .s2_head span {font-size: 3rem;}
+  .s2_btn {gap: 1.5rem;}
+  .s2_btn li {font-size: 2rem;}
   .item_info div span {
     font-size: 2.2rem;
     margin-left: 2rem;
@@ -422,9 +339,7 @@
     font-size: 1.6rem;
     margin-left: 2rem;
   }
-  .info_img {
-    display: none;
-  }
+  .info_img {display: none;}
   .desk_only {
     display: block;
     width: 50rem;
@@ -435,24 +350,16 @@
     height: 30rem;
     object-fit: cover;
   }
-  .desk_only li {
-    display: none;
-  }
-  .desk_only li.active {
-    display: block;
-  }
+  .desk_only li {display: none;}
+  .desk_only li.active {display: block;}
 
   /* section3 */
-  .s3_content {
-    width: 70%;
-  }
+  .s3_content {width: 70%;}
   #s3 .s3_head h4,
   #s3 .s3_head span {
     font-size: 2.4rem;
   }
-  .s3_head h2 {
-    font-size: 3rem;
-  }
+  .s3_head h2 {font-size: 3rem;}
   .reviews {
     display: grid;
     grid-template-columns: 1fr;
@@ -460,24 +367,16 @@
     z-index: -1;
   }
 
-  .review {
-    width: 86rem;
-  }
+  .review {width: 86rem;}
   .re_img img {
     width: 20rem;
     height: 15rem;
     object-fit: cover;
   }
-  .review .re_textup .star {
-    font-size: 2rem;
-  }
+  .review .re_textup .star {font-size: 2rem;}
 
-  .review .re_textup .city {
-    font-size: 1.8rem;
-  }
-  .re_textdown {
-    font-size: 2rem;
-  }
+  .review .re_textup .city {font-size: 1.8rem;}
+  .re_textdown {font-size: 2rem;}
 
   /* sub 01-2____________________________ */
 
@@ -490,13 +389,18 @@
     width: 70%;
     margin: auto;
     margin-top: 3rem;
+<<<<<<< HEAD
+=======
   }
   #s2s1 .s2s1_head h2 {
     font-size: 2.4rem;
   }
   .s2s1_head span {
     font-size: 3.2rem;
+>>>>>>> a302a53c7406f4690b27c68ddf9f370123e28a88
   }
+  #s2s1 .s2s1_head h2 {font-size: 2.4rem;}
+  .s2s1_head span {font-size: 3.2rem;}
   .s2s1_content {
     display: flex;
     justify-content: center;
@@ -537,41 +441,26 @@
     font-size: 1.8rem;
   }
 
-  .box_row .right .w {
-    display: none;
-  }
-  .box p {
-    font-size: 1.6rem;
-  }
-
-  .box_row.header {
-    font-size: 1.6rem;
-  }
+  .box_row .right .w {display: none;}
+  .box p {font-size: 1.6rem;}
+  .box_row.header {font-size: 1.6rem;}
 
   .box_row .left {
     padding-left: 2rem;
     text-align: center;
   }
 
-  .box_row .dis {
-    font-size: 1.6rem;
-  }
+  .box_row .dis {font-size: 1.6rem;}
 
   /* section2 */
-  #s2s2 {
-    height: 70rem;
-  }
+  #s2s2 {height: 70rem;}
   .s2s2_contents {
     width: 70%;
     margin: auto;
     padding: 2rem;
   }
-  .s2s2_head h2 {
-    font-size: 2.4rem;
-  }
-  .s2s2_head span {
-    font-size: 3rem;
-  }
+  .s2s2_head h2 {font-size: 2.4rem;}
+  .s2s2_head span {font-size: 3rem;}
   .s2s2_content {
     width: 50rem;
     gap: 1rem;
@@ -582,30 +471,18 @@
     width: 40rem;
     transform: translate(30rem, 10rem);
   }
-  .s2s2_texts {
-    width: 50rem;
-  }
-  .s2s2_text {
-    width: 50rem;
-  }
-  .s2s2_texts .s2s2_text h2 {
-    font-size: 2.4rem;
-  }
-  .s2s2_text span {
-    font-size: 1.6rem;
-  }
+  .s2s2_texts {width: 50rem;}
+  .s2s2_text {width: 50rem;}
+  .s2s2_texts .s2s2_text h2 {font-size: 2.4rem;}
+  .s2s2_text span {font-size: 1.6rem;}
 
   /* section3 */
-  #s2s3 {
-    padding: 2rem;
-  }
+  #s2s3 {padding: 2rem;}
   #s2s3 .s2s3_content {
     width: 70%;
     margin: 3rem 0;
   }
-  .s2s3_head h2 {
-    font-size: 3rem;
-  }
+  .s2s3_head h2 {font-size: 3rem;}
   .s2s3_head h4,
   .s2s3_head span {
     font-size: 2.4rem;

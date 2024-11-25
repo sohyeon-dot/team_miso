@@ -16,13 +16,13 @@ $('.s2_btn li').click(function () {
   $(this).addClass('active');
 
   // 해당 탭의 텍스트 콘텐츠만 보여주기
-  var tabClass = $(this).data('alt');
+  var tabId = $(this).data('alt');
   $('.item_info li').removeClass('active');
-  $('.' + tabClass).addClass('active');
+  $('#' + tabId).addClass('active');
 
   // desk_only 이미지도 해당 탭에 맞는 이미지만 활성화
   $('.desk_only li').removeClass('active');
-  $('.desk_only li.' + tabClass).addClass('active');
+  $('.desk_only li#' + tabId).addClass('active');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
