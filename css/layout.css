@@ -125,24 +125,32 @@ main .main_text > *{opacity: 0;}
 
 #section02{
   padding: 0;
-  height: 95rem;
+  height: calc(100vh - 6.3rem);
 }
 #section02 .s2_content{
+  position: relative;
   display: none;
   width: 100%;
-  height: 95rem;
+  height: 100%;
 }
 #section02 .s2_content.active{display: block;}
+#section02 .images{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;  
+}
 #section02 .images img{
   position: absolute;
   width: 100%;
-  height: 95rem;
+  height: 100%;
   object-fit: cover;
   display: none;
 }
 #section02 .s2_content .rel{
   width: 100%;
-  height: 95rem;
+  height: 100%;
   background: rgba(0,0,0,0.5);
   padding: 2rem;
 }
@@ -232,11 +240,16 @@ main .main_text > *{opacity: 0;}
 #section02 .itmes div[class*=key]{
   opacity: 0;
 }
-
-#section02 .s2_content .main_image img{
+#section02 .s2_content .main_image{
   position: absolute;
   width: 100%;
-  height: 95rem;
+  height: 130%;
+  top: 0;
+  left: 0;
+}
+#section02 .s2_content .main_image img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 #section02 #capTab2 .s2_tit{

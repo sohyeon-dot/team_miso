@@ -102,22 +102,22 @@ function applyTransform() {
     reviews.forEach((review, index) => {
       switch (index) {
         case 1:
-          review.style.transform = 'translate(40rem, -5rem)';
+          review.style.transform = 'translateY(-5rem)';
           break;
         case 2:
-          review.style.transform = 'translate(15rem, -8rem)';
+          review.style.transform = 'translateY( -8rem)';
           break;
         case 3:
-          review.style.transform = 'translate(45rem, -12rem)';
+          review.style.transform = 'translateY( -12rem)';
           break;
         case 4:
-          review.style.transform = 'translate(-1rem, -15rem)';
+          review.style.transform = 'translateY(-15rem)';
           break;
         case 5:
-          review.style.transform = 'translate(35rem, -20rem)';
+          review.style.transform = 'translateY(-20rem)';
           break;
         case 6:
-          review.style.transform = 'translate(5rem, -24rem)';
+          review.style.transform = 'translateY(-24rem)';
           break;
         default:
           review.style.transform = 'none';

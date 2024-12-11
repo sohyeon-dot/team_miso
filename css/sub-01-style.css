@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(common.css);
 @import url(font.css);
 @import url(sub-header.css);
 @import url(footer.css);

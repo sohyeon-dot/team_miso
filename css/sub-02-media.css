@@ -1,90 +1,83 @@
-
 @media screen and (min-width:768px){
 
-.goto-top>a{display: none;}
+  .goto-top>a{display: none;}
 
-#section1 .tit_wrap{margin-left: 10rem;}
-#section1 .tit{
-        line-height: 5rem;
-        font-size: 3rem;
-        text-align: left;
-        margin-bottom: 1rem;
-    }
-.s1-visual{display: none;}
-.s1-visual-pc{
+  #section1 .tit{
+    line-height: 5rem;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .s1-visual{display: none;}
+  .s1-visual-pc{
     display:block;
-    float: right;
-    margin-right: 12rem;
     width: 25rem;
     height: 20rem;
-    margin-bottom: 4rem;
-    }
+  }
+  #section1 table {font-size: 1.8rem;}
+  #section1 table th,
+  #section1 table td {
+    padding: 1.5rem;
+  }
+  #section1 table td:last-child {font-size: 2rem;}
+  #section1 table td span {font-size: 1.4rem;}
     #section2{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+      width: 95%;
+      margin: auto;
+      margin-bottom: 10rem;
     }
     #section2 .tit_wrap{
         display: flex;
         align-items: center;
-        justify-content: left;
-        margin-left: 5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     #section2 .tit_wrap h2{
         font-size: 3.5rem;
-        padding: 1rem;
-        border: 1px solid #000;
     }
 
     #section2 p{
         font-size: 2rem;
-        text-indent: -4rem;
-        height: fit-content;
         margin-top: 10rem;
-        width: 20rem;
     }
 
-    #section2 .chk-list{width: 75rem;
-        display: flex;
-        align-items: center;
+    #section2 .chk-list{
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      column-gap: 2rem;
     }
     #section2 .content{
-        padding: 5rem;
-        background-color: #fff;
-        border-radius: 5rem;
-        width: 20rem;
-        height: 20rem;
-        box-shadow: 0 0.2rem 1rem rgba(77, 77, 77, 0.3);
+      padding: 3rem 2rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      flex: 1;
+      height: 20rem;
+      box-shadow: 0 0.2rem 1rem rgba(77, 77, 77, 0.2);
     }
 
     #section2 .content{
         text-align: left;
+        margin: 0;
     }
     #section2 .dday{
         height: 2rem;
         width: 2rem;
     }
-    #section2 h3{ font-size: 1.8rem;}
+    #section2 h3{ 
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
     #section2 h4{
-        background-color: #CADDFE;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
         margin: .5rem;
-        padding: 1rem;
+        padding: .3rem 1rem;
+        line-height: 2.3rem;
         width: max-content;
-        height: 4.5rem;
-        border-radius: 5px;
     }
 
-    #section2 .content>h4::before{
-        content: '';
-        background-color: #0051FF;
-        width: 1.6rem;
-        height: 1.6rem;
-        border-radius: 1.6rem;
-    }
 /* sub 2 이사청소 section 2 */
 
     .s2_contents {
@@ -205,10 +198,15 @@
 
     /* section 3 ---------- */
     #section3 {
-        margin-top: 8rem;
-        margin-left: 3rem;
+      width: 100%;
+      margin-top: 10rem;
     }
-
+    #section3 .s3_content{width: 100%;}
+    #section3 .tit_wrap{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 5rem;
+    }
     #section3 .tit_wrap p {
         font-size: 5rem;
         text-align: center;
@@ -233,9 +231,10 @@
     #section3 .tit_wrap h3::after {
         content: '';
         position: absolute;
-        height: 15rem;
-        width: 15rem;
-        background: url(../image/tdesign_chat-bubble.png) no-repeat;
+        top: -2rem;
+        height: 10rem;
+        width: 10rem;
+        background: url(../image/tdesign_chat-bubble.png) no-repeat center/cover;
     }
 
     #section3 .tit_wrap h4 {
@@ -246,21 +245,26 @@
         left: 68%;
         margin-bottom: 10rem;
     }
-
+    #section3 .reviews{
+      width: 90%;
+      height: 80rem;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+    }
     #section3 .review {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        width: 80rem;
-        height: 15rem;
-        padding: .5rem 1rem;
-        align-items: center;
-        gap: 20px;
-        border-radius: 10px;
-        background: #FDFDFD;
-        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
-        margin: 2.5rem;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      width: 50rem;
+      height: 15rem;
+      padding: .5rem 1rem;
+      align-items: center;
+      gap: 20px;
+      border-radius: 10px;
+      background: #FDFDFD;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
     }
 
     #section3 .review .city {font-size: 1.2rem;}
@@ -269,56 +273,23 @@
         height: 10rem;
         width: 15rem;
     }
-    #section3 .review:nth-child(2) {transform: translateX(-rem);}
-
-    #section3 .review:nth-child(3) {transform: translateX(10rem);}
-
-    #section3 .review:nth-child(4) {transform: translateX(-5rem);}
-
-    #section3 .review:nth-child(5) {transform: translateX(0rem);}
-
-    #section3 .review:nth-child(6) {transform: translateX(10rem);}
-    
+    #section3 .review:nth-child(2) {
+      top: 18%;
+      right: 3%;
+    }
+    #section3 .review:nth-child(3) {
+      top: 37%;
+      left: 3%;
+    }
+    #section3 .review:nth-child(4) {
+      top: 55%;
+      right: 7%;
+    }
+    #section3 .review:nth-child(5) {
+      top: 74%;
+    }
 
 }
-
-@media screen and (min-width:734px) {
-    #section1 table {
-            width: 45rem;
-            font-size: 1.8rem;
-            margin: 10rem auto;
-        }
-    
-        #section1 table th,
-        #section1 table td {
-            padding: 1.5rem;
-            border: 0.1rem solid #ddd;
-        }
-    
-        #section1 table th {
-            background-color: #D6E3FF;
-            width: 13rem;
-            color: #666;
-            font-weight: 500;
-        }
-    
-        #section1 table td {
-            font-weight: 600;
-        }
-    
-        #section1 table td:last-child {
-            font-size: 2rem;
-            color: var(--mainColor);
-        }
-    
-        #section1 table td span {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: #666;
-        }
-        #s2{margin-top: 25rem;}
-}
-
 
 @media screen and (min-width:1300px){
     
@@ -337,19 +308,17 @@
         display: flex;
         align-items: center;
     }
-    
     main h2, main .main-inner a{margin-top: 10rem;}
     main h2{
-        padding-left: 15rem;
         font-size: 4rem;
     }
-    main .main-inner a{margin-left: 20rem;}
     .mob_only{display: none;}
     #section1{
-        height: 70rem;
+      max-width: 1300px;
+      margin: auto;
+      height: 70rem;
     }
     #section1 .txt1{
-        padding-left: 37rem;
         color: #666;
         font-size: 2rem;
         font-style: normal;
@@ -361,98 +330,68 @@
         width: 5.6rem;
     }
     #section1 .tit{
-        padding-left: 37rem;
         line-height: 8rem;
         font-size: 5rem;
         text-align: left;
     }
     #section1 .s1-visual{display: none;}
     .s1-visual-pc{
-        float: right;
-        margin-right: 50rem;
-        width: 45rem;
-        height: 25rem;
+      width: 45rem;
+      height: 25rem;
     }
     #section1 table{
-        width: 100rem;
-        font-size: 2rem;
-        margin: 10rem auto;
+      width: 80%;
+      max-width: 120rem;
+      font-size: 2rem;
+      margin: 10rem auto;
     }
-        #section1 table th,
-        #section1 table td{
-        padding: 2.5rem;
-        border: 0.1rem solid #ddd;
-        }
-    #section1 table th{
-        background-color: #D6E3FF;
-        width: 15rem;
-        color: #666;
-        font-weight: 500;
+    #section1 table th,
+    #section1 table td{
+      padding: 2.5rem;
     }
     #section1 table td{font-weight: 600;}
     #section1 table td:last-child{
-        font-size: 2.5rem;
-        color: var(--mainColor);
+      font-size: 2.5rem;
     }
     #section1 table td span{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #666;
+      font-size: 1.6rem;
     }
 
     #section2{
+      margin: 30rem auto 20rem;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
     }
     #section2 .tit_wrap{
-        margin-top: 10rem;
         display: flex;
         align-items: center;
         justify-content: left;
     }
     #section2 .tit_wrap h2{
         font-size: 3.5rem;
-        padding: 1rem;
-        border: 1px solid #000;
     }
-
-
     #section2 .chk-list{
-        display: flex;
-        align-items:center;
-        justify-content: space-around;
-        width: 180rem;
-        height: 55rem;
-        background: rgba(255, 225, 0, 0.30);
-        margin-bottom: 4rem;
+      width: 90%;
+      margin: auto;
+      margin-top: -10rem;
+      display: flex;
+      align-items:center;
+      justify-content: space-around;
+      height: 55rem;
     }
     #section2 .content{
-        padding: 5rem;
-        background-color: #fff;
-        border-radius: 5rem;
-        width: 40rem;
-        height: 30rem;
-        box-shadow: 0 0.2rem 1rem rgba(77, 77, 77, 0.3);
+      padding: 4rem 2rem;
+      height: 28rem;
     }
     
-    #section2 .content{
-        text-align: left;
-        margin-left: 3rem;
-    }
     #section2 h3{ font-size: 3rem;}
 
     #section2 h4{
-        background-color: #CADDFE;
-        font-size: 2rem;
-        text-align: center;
-        margin: 1rem;
-        margin-left: 5rem;
-        padding: 1rem;
-        width: fit-content;
-        height: 4.5rem;
-        border-radius: 5px;
+      font-size: 2rem;
+      line-height: .03rem;
+      padding: 2rem 4rem;
     }
 
     #section2 .content>h4::before{
@@ -465,16 +404,20 @@
 
 /* sub 2 이사청소 section 2 */
 #s2 {
+    width: 100%;
     padding: 3rem;
+    margin: 20rem 0;
 }
 
 .s2_contents {
-    margin-bottom: 30rem;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 60rem;
-    gap: 2rem;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 30rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 60rem;
+  gap: 2rem;
 }
 
 .s2_head {
@@ -654,9 +597,9 @@
     }
 
     /* section 3 ---------- */
-    #section3{
-    margin-top: 8rem;
-    margin-left: 3rem;
+    #section3 .tit_wrap{
+      max-width: 1300px;
+      margin: auto;
     }
     #section3 .tit_wrap p{
         font-size: 5rem;
@@ -691,33 +634,30 @@
         left: 68%;
         margin-bottom: 10rem;
     }
+    #section3 .reviews{
+      max-width: 1300px;
+      margin-top: 10rem;
+      height: 130rem;
+    }
     #section3 .review{
-        position: relative;
         display: flex;
         align-items: center;
         justify-self: center;
-        width: 100rem;
-        height: 25rem;
+        width: 80rem;
+        height: 22rem;
         padding: 10px 20px;
         align-items: center;
-        gap: 20px;
-        border-radius: 10px;
+        gap: 30px;
+        border-radius: 20px;
         background: #FDFDFD;
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
-        margin: 2.5rem;
     }
-        #section3 .review .re_img img {
-            height: 20rem;
-            width: 25rem;
-        }
+    #section3 .review .re_img img {
+      height: 18rem;
+      width: 20rem;
+    }
 
     #section3 .review .city{font-size: 1.5rem;}
     #section3 .review .re_textdown{font-size: 2rem;}
-
-    #section3 .review:nth-child(2) {transform: translateX(-40rem);}
-    #section3 .review:nth-child(3) {transform: translateX(40rem);}
-    #section3 .review:nth-child(4) {transform: translateX(-30rem);}
-    #section3 .review:nth-child(5) {transform: translateX(30rem);}
-    #section3 .review:nth-child(6){transform: translateX(-20rem);}
 
 }

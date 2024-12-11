@@ -16,13 +16,13 @@ $('.s2_btn li').click(function () {
   $(this).addClass('active');
 
   // 해당 탭의 텍스트 콘텐츠만 보여주기
-  var tabId = $(this).data('alt');
+  var tabClass = $(this).data('alt');
   $('.item_info li').removeClass('active');
-  $('#' + tabId).addClass('active');
+  $('.' + tabClass).addClass('active');
 
   // desk_only 이미지도 해당 탭에 맞는 이미지만 활성화
   $('.desk_only li').removeClass('active');
-  $('.desk_only li#' + tabId).addClass('active');
+  $('.desk_only li.' + tabClass).addClass('active');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -131,22 +131,22 @@ function applyTransform() {
     reviews.forEach((review, index) => {
       switch (index) {
         case 1:
-          review.style.transform = 'translate(40rem, -5rem)';
+          review.style.transform = 'translateY(-5rem)';
           break;
         case 2:
-          review.style.transform = 'translate(15rem, -8rem)';
+          review.style.transform = 'translateY(-8rem)';
           break;
         case 3:
-          review.style.transform = 'translate(45rem, -12rem)';
+          review.style.transform = 'translateY( -12rem)';
           break;
         case 4:
-          review.style.transform = 'translate(-1rem, -15rem)';
+          review.style.transform = 'translateY(-15rem)';
           break;
         case 5:
-          review.style.transform = 'translate(35rem, -20rem)';
+          review.style.transform = 'translateY(-20rem)';
           break;
         case 6:
-          review.style.transform = 'translate(5rem, -24rem)';
+          review.style.transform = 'translateY(-24rem)';
           break;
         default:
           review.style.transform = 'none';

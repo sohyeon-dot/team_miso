@@ -1,62 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-:root {
-  --mainColor: #0051ff;
-  --subColor: #ffe100;
-}
-
-body {color: #333;}
-
-.rel {position: relative;}
-.goto-top{
-  position: fixed;
-  bottom: 6rem;
-  right: 2rem;
-  text-align: center;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-  z-index: 100;
-}
-.goto-top > i {
-  font-size: 2.2rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  padding: 1.6rem 1.3rem;
-  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-.goto-top>a{
-  position: relative;
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  background: url(../image/icon-down.png) no-repeat center var(--mainColor);
-  border-radius: 50%;
-  padding: 1.3rem;
-  margin-top: 1rem;
-  box-shadow: 0 0 0.4rem rgba(0,0,0,0.4);
-}
-.goto-top > p {
-  position: absolute;
-  right: 107%;
-  bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 1.2rem;
-  width: max-content;
-  padding: 1rem;
-  border-radius: 3rem;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.goto-top > a:hover + p {opacity: 1;}
-.goto-top.On {opacity: 1;}
-
 /* banner */
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 35rem;
   width: 100%;
 }
@@ -67,52 +12,40 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url(../image/sub1.jpg) no-repeat center/cover;
   position: relative;
 }
-.sub_v1::before {
+.sub_v1:after{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../image/sub1.jpg) no-repeat center/cover;
-  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .sub_text {
-  position: relative;
+  position: absolute;
+  top: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 70%;
-  margin: 4rem 0;
+  z-index: 1;
+}
+.sub_text .text_left{
   color: #fff;
-  font-size: 3.3rem;
-  font-weight: 800;
-  text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
+  font-weight: 700;
 }
-.sub_btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 2.4rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #121212;
-  filter: none;
-}
-.sub_btn a {
-  padding: 0.5rem 2.5rem;
-  border-radius: 1rem;
-  background-color: var(--subColor);
-}
+.sub_text .text_left span{display: block;}
+
 
 /* s */
 section {
+  margin: 10rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,21 +53,22 @@ section {
 
 /* section 1*/
 #s1 {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 2rem;
   gap: 2rem;
   flex-direction: column;
-  margin: auto;
-  margin: 2rem 0;
 }
+
 .s1_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   min-width: 340px;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 2rem;
 }
-.s1_text {margin-bottom: 3rem;}
+
 .s1_text h3 {
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
@@ -145,7 +79,9 @@ section {
   font-size: 2rem;
   font-weight: 800;
 }
-.s1_text br {display: none;}
+.s1_text br {
+  display: none;
+}
 .modal_btn {
   font-size: 1.6rem;
   font-weight: 400;
@@ -154,22 +90,23 @@ section {
   color: #fff;
   padding: 1rem 2rem;
 }
-.dt_img {display: none;}
+.dt_img {
+  display: none;
+}
 .s1_right {
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transform: translateX(1rem);
 }
 .price_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34rem;
+  width: 100%;
   margin-top: 2rem;
 }
 .box_headt {
-  width: 10rem;
   height: 3rem;
   border: 1px solid #f1f1f1;
   background-color: #d6e3ff;
@@ -185,7 +122,6 @@ section {
   color: #666;
 }
 .box_head {
-  width: 12rem;
   height: 3rem;
   border: 1px solid #f1f1f1;
   background-color: #d6e3ff;
@@ -193,7 +129,6 @@ section {
 }
 .times div:not(:nth-child(1)) {
   flex: 0.5;
-  width: 10rem;
   height: 7rem;
   border: 1px solid #f1f1f1;
   background-color: #fff;
@@ -206,9 +141,10 @@ section {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.one_price {flex: 1;}
+.one_price {
+  flex: 1;
+}
 .one_price div:not(:nth-child(1)) {
-  width: 12rem;
   height: 7rem;
   border: 1px solid #f1f1f1;
   background-color: #fff;
@@ -222,9 +158,10 @@ section {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.other {flex: 1;}
+.other {
+  flex: 1;
+}
 .other div:not(:nth-child(1)) {
-  width: 12rem;
   height: 7rem;
   border: 1px solid #f1f1f1;
   background-color: #fff;
@@ -237,8 +174,12 @@ section {
   height: 100%;
   font-size: 1.4rem;
 }
-.discount h4 {color: var(--mainColor);}
-.discount span {color: #999;}
+.discount h4 {
+  color: var(--mainColor);
+}
+.discount span {
+  color: #999;
+}
 .info {
   margin-top: 1rem;
   text-align: left;
@@ -279,7 +220,9 @@ section {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.modal_body {padding: 2rem 0;}
+.modal_body {
+  padding: 2rem 0;
+}
 .modal_body h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
@@ -377,8 +320,12 @@ section {
   flex: 1;
   width: 100%;
 }
-.item_info > li {display: none;}
-.item_info > li.active {display: block;}
+.item_info > li {
+  display: none;
+}
+.item_info > li.active {
+  display: block;
+}
 .item_info img {
   width: 90%;
   height: 9rem;
@@ -412,13 +359,15 @@ section {
   font-size: 1.1rem;
   color: #666;
 }
-.desk_only {display: none;}
+.desk_only {
+  display: none;
+}
 
 /* section3 */
 #s3 {
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  padding: 4rem;
   margin: 2rem 0;
   overflow: hidden;
 }
@@ -429,8 +378,10 @@ section {
   width: 90%;
 }
 .s3_head {
-  text-align: left;
-  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5rem;
 }
 .s3_head h4 {
   font-size: 1.6rem;
@@ -446,50 +397,60 @@ section {
   font-weight: 600;
   color: #666;
 }
-.s3_head strong {color: #333;}
+.s3_head strong {
+  color: #333;
+}
 
 .reviews {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  position: relative;
+  width: 100%;
+  height: 120rem;
   z-index: -1;
 }
 .review {
+  position: absolute;
   display: flex;
   align-items: center;
-  width: 30rem;
-  gap: 1rem;
+  width: 40rem;
+  height: 18rem;
+  gap: 2rem;
   background-color: #f9f9f9;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 1rem;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-  position: relative;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
 }
-.review::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 10%;
-  width: 0;
-  height: 0;
-  border: 25px solid transparent;
-  border-top-color: #f7f7f7;
-  border-bottom: 0;
-  margin-left: -1rem;
-  margin-bottom: -1rem;
-  z-index: -1;
+.review:nth-of-type(2) {
+  top: 15%;
+  right: 0;
+}
+.review:nth-of-type(3) {
+  top: 28%;
+  left: 0;
+}
+.review:nth-of-type(4) {
+  top: 42%;
+  right: 0;
+}
+.review:nth-of-type(5) {
+  top: 55%;
+  left: 0;
+}
+.review:nth-of-type(6) {
+  top: 70%;
+  right: 0;
+}
+.review:nth-of-type(7) {
+  top: 83%;
+  left: 0;
 }
 .re_img img {
-  width: 10rem;
-  height: 10rem;
+  width: 35rem;
+  height: 15rem;
   object-fit: cover;
   border-radius: 1rem;
 }
-.re_texts {
-  width: 15rem;
-  margin-left: 0.5rem;
-}
+
 .re_textup {
   display: flex;
   align-items: center;
@@ -511,7 +472,9 @@ section {
   font-weight: 400;
   line-height: 1.4;
 }
-.s3_content .review {transform: none;}
+.s3_content .review {
+  transform: none;
+}
 
 /* sub01-2 -----------------------------------------------*/
 
@@ -524,9 +487,10 @@ section {
   align-items: center;
   flex-direction: column;
   position: relative;
+  background: url(../image/sub2.jpg) no-repeat center/cover;
 }
 .sub_v2 .sub_text {
-  min-width: 36rem;
+  min-width: 34rem;
   text-align: center;
 }
 .sub_v2::before {
@@ -534,20 +498,23 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../image/sub2.jpg) no-repeat center/cover;
-  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* section1 */
-#s2s1 {padding: 2rem;}
-.s2s1_contents {
-  width: 80%;
+#s2s1 {
+  width: 95%;
   margin: auto;
-  margin: 2rem;
 }
-.s2s1_head {margin-bottom: 2rem;}
+.s2s1_contents {
+  width: 100%;
+  margin: 10rem 0;
+}
+.s2s1_head {
+  margin-bottom: 2rem;
+}
 #s2s1 .s2s1_head h2 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -560,6 +527,8 @@ section {
 }
 /* 탭 버튼 스타일 */
 .s2s1_btns {
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -598,7 +567,9 @@ section {
   background-color: #fff;
   margin-bottom: 2rem;
 }
-.box.active {display: block;}
+.box.active {
+  display: block;
+}
 
 .box_row {
   display: flex;
@@ -629,7 +600,9 @@ section {
   color: #666;
   text-align: center;
 }
-.box_row span {letter-spacing: 0.05rem;}
+.box_row span {
+  letter-spacing: 0.05rem;
+}
 
 .box p {
   font-size: 1.2rem;
@@ -662,7 +635,9 @@ section {
   width: 80%;
   height: 100%;
 }
-.s2s2_head {margin-bottom: 2rem;}
+.s2s2_head {
+  margin-bottom: 2rem;
+}
 .s2s2_head h2 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -692,7 +667,9 @@ section {
   border-bottom: 0.1rem solid #ccc;
   padding-bottom: 3rem;
 }
-.s2s2_texts:nth-child(2) {margin: 3rem 0;}
+.s2s2_texts:nth-child(2) {
+  margin: 3rem 0;
+}
 .s2s2_texts:nth-child(3) {
   border-bottom: none;
   padding-bottom: 0;
@@ -722,24 +699,33 @@ section {
 }
 
 /* section3 */
-#s2s3 {padding: 2rem;}
+#s2s3 {
+  width: 100%;
+}
 .s2s3_content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
-.s2s3_head {margin-bottom: 2rem;}
+.s2s3_head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+}
 .s2s3_head h4,
 .s2s3_head span {
   font-size: 1.8rem;
   font-weight: 600;
   color: #666;
 }
-.s2s3_head strong {color: #333;}
+.s2s3_head strong {
+  color: #333;
+}
 .s2s3_head h2 {
   font-size: 2.2rem;
   font-weight: 800;
-  margin: 1rem 0;
 }

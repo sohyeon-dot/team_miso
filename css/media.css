@@ -138,8 +138,8 @@
   }
   #section02 .s2_content .main_image img{height: 95%;}
   #section02 #capTab2 .s2_tit:before{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     top: 2rem;
   }
   #section02 .cards{width: 90%;}
@@ -386,6 +386,8 @@
   #section02 .caption .s2_btn{float: right;}
 
   #section02 #capTab2 .s2_tit:before{
+    width: 10rem;
+    height: 10rem;
     top: 0;
   }
   #section02 div[class*=card]>span{
