@@ -210,7 +210,7 @@ main .main_text > *{opacity: 0;}
 #section02 .caption{
   border: .1rem solid #fff;
   border-radius: .5rem;
-  padding: 4%;
+  padding: 3.5%;
   flex: 1;
   color: #fff;
   transition: 0.3s;
