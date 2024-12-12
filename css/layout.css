@@ -125,7 +125,7 @@ main .main_text > *{opacity: 0;}
 
 #section02{
   padding: 0;
-  height: calc(100vh - 6.3rem);
+  height: calc(100vh - 6rem);
 }
 #section02 .s2_content{
   position: relative;
