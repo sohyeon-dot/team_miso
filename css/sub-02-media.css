@@ -65,11 +65,13 @@
         width: 2rem;
     }
     #section2 h3{ 
+      display: block;
       text-align: center;
       font-size: 1.8rem;
       margin-bottom: 2rem;
     }
     #section2 h4{
+        display: block;
         font-size: 1.4rem;
         text-align: center;
         margin: .5rem;
