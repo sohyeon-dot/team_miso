@@ -1,4 +1,4 @@
-@media screen and (min-width:768px){
+@media screen and (min-width:750px){
   
   html{font-size: 65%;}
 
@@ -126,9 +126,9 @@
     height: max-content;
     display: flex;
     flex-direction: column;
-    padding: 2.5rem;
+    padding: 2rem;
   }
-  #section02 .content div:nth-child(1){padding: 3.6rem 3rem;}
+  #section02 .content div:nth-child(1){padding: 3rem;}
   #section02 .caption .dask_only{display: inline;}
   #section02 .caption .s2_btn{
     width: max-content;
@@ -190,13 +190,13 @@
     background: url(../image/section03_icon3.png) no-repeat center/cover;
   }
   #section03 .dask_only .card_txt h6{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
   #section03 .dask_only .card_txt p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-  #section03 table{flex: 1;}
+  #section03 table{flex: 1.2;}
   #section03 .swiper-container{
     display: flex;
     width: 100%;
