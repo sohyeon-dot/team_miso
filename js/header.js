@@ -26,17 +26,17 @@ $(document).ready(function(){
       scrollTopBtn.removeClass('On');
     }
     
-    if (scroll > 300 && wB > 1280) {
+    if (scroll > 300 && wB > 1300) {
       scrollTopBtn.addClass('On');
       $('.header_left .nav').css({ display: 'none' });
       $('.header_left img').css({ display: 'none' });
-    } if(scroll < 300 && wB > 1280) {
+    } if(scroll < 300 && wB > 1300) {
       scrollTopBtn.removeClass('On');
       $('.header_left .nav').css({ display: 'inline-block' });
       $('.header_left img').css({ display: 'inline-block' });
     }
 
-    if (scroll > 900 && wB >1280) {
+    if (scroll > 900 && wB >1300) {
       BODY.addClass('scrolling');
       $('.header_left img').css({ display: 'inline-block' });
     } else {
