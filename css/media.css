@@ -390,7 +390,7 @@
   #section02 #capTab2 .s2_tit:before{
     width: 8rem;
     height: 8rem;
-    top: ;
+    top: 1rem;
   }
   #section02 div[class*=card]>span{
     font-size: 3.5rem;
