@@ -366,7 +366,7 @@
   }
   #section02 .content{
     width: 35%;
-    height: 60%;
+    height: 55%;
     flex-direction: column;
     bottom: 5%;
     right: 0;
@@ -377,7 +377,9 @@
     width: 90%;
     height: max-content;
     flex: 1;
+    padding: 4rem;
   }
+  #section02 .content div:nth-child(1){padding: 4.2rem 4rem 2.9rem;}
   #section02 .caption h3{font-size: 2.9rem;}
   #section02 .caption p{font-size: 2.5rem;}
   #section02 .caption span{font-size: 2rem;}
@@ -385,9 +387,9 @@
   #section02 .caption .s2_btn{float: right;}
 
   #section02 #capTab2 .s2_tit:before{
-    width: 10rem;
-    height: 10rem;
-    top: 0;
+    width: 8rem;
+    height: 8rem;
+    top: 1rem;
   }
   #section02 div[class*=card]>span{
     font-size: 3.5rem;
@@ -449,7 +451,7 @@
     display: flex;
     column-gap: 10rem;
     align-items: flex-end;
-    margin-top: -20rem;
+    margin-top: -5rem;
     margin-bottom: 10rem;
     width: 100%;
   }
@@ -471,7 +473,7 @@
   #section03 table{
     width: 65rem;
     font-size: 1.8rem;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
   }
   #section03 table th,
   #section03 table td{

@@ -51,4 +51,9 @@ $(document).ready(function(){
     $(this).find(".sub_menu").stop().slideUp();
   });
 
+  $(function(){
+    $("html, body").animate({ scrollTop: 0 }, "fast"); 
+  });
+
+
 });
