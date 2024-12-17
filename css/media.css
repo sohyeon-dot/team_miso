@@ -225,6 +225,7 @@
 @media screen and (min-width:1300px){
   
   .mob_only{display: none;}
+  .tablet_only{display: none;}
   .more_btn{
     font-size: 2rem;
     padding: 1.2rem 2.1rem;
@@ -389,7 +390,7 @@
   #section02 #capTab2 .s2_tit:before{
     width: 8rem;
     height: 8rem;
-    top: 1rem;
+    top: ;
   }
   #section02 div[class*=card]>span{
     font-size: 3.5rem;
