@@ -27,14 +27,14 @@ body{
 .goto-top{
   position: fixed;
   bottom: 6rem;
-  right: 2rem;
+  right: 1rem;
   text-align: center;
   opacity: 0;
   transition: 0.3s ease-in-out;
   z-index: 100;
 }
 .goto-top>i{
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   background-color: #fff;
   border-radius: 2rem;
   padding: 1.6rem 1.3rem;
@@ -44,11 +44,12 @@ body{
 .goto-top>a{
   position: relative;
   display: block;
-  width: 6rem;
-  height: 6rem;
-  background: url(../image/icon-down.png) no-repeat center var(--mainColor);
+  width: 3rem;
+  height: 3rem;
+  background: url(../image/icon-down.png) no-repeat center ;
+  background-color: var(--mainColor);
   border-radius: 50%;
-  padding: 1.3rem;
+  padding: 2.7rem;
   margin-top: 1rem;
   box-shadow: 0 0 0.4rem rgba(0,0,0,0.4);
 }
